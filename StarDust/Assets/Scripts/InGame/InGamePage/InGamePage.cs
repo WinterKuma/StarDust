@@ -17,9 +17,9 @@ public class InGamePage : MonoBehaviour
     public GameManager manager;
 
     //턴 시작시 효과 리스트
-    public List<object> pageOnEffectList;
+    //public List<object> pageOnEffectList;
     //턴 종료시 효과 리스트
-    public List<object> pageOffEffectList;
+    //public List<object> pageOffEffectList;
 
     public virtual void Awake()
     {

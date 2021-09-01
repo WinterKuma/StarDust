@@ -19,7 +19,6 @@ public class ManaPage : InGamePage
         manager.localPlayer.info.manaPoint = manager.localPlayer.info.maxManaPoint;
         manager.localPlayer.info.movePoint = manager.localPlayer.info.infoMovePoint;
 
-        manager.SetPage(PageType.MainPage);
     }
 
     public override void Exit()
@@ -36,6 +35,7 @@ public class ManaPage : InGamePage
     // Update is called once per frame
     void Update()
     {
-        
+        //Update()에서 UI 변동 시 혹은 게임 메니저에서 Scene 변경
+        manager.SetPage(PageType.MainPage);
     }
 }

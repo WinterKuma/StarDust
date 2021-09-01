@@ -5,6 +5,7 @@ using UnityEngine;
 public class Hero : MonoBehaviour
 {
     public HeroInfo info;
+    public bool isActive;
 
     private void Awake()
     {
