@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     public Text movePointText;
     public Button turnEndButton;
 
-    public GameObject[,] field = new GameObject[8, 8];
     public Hero localPlayer;
 
 
