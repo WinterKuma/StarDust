@@ -6,6 +6,20 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    //
+    private static GameManager instance;
+    public static GameManager Instance
+    {
+        get
+        {
+            if (instance == null)
+                instance = FindObjectOfType<GameManager>();
+            return instance;
+        }
+    }
+    public MapManager mapManager;
+    //
+
     private InGamePage.PageType currentPage = InGamePage.PageType.InitPage;
     private Dictionary<InGamePage.PageType, InGamePage> pages = new Dictionary<InGamePage.PageType, InGamePage>();
 
@@ -17,6 +31,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        mapManager = GetComponent<MapManager>();
+
         pages[InGamePage.PageType.InitPage] = GetComponent<InitPage>();
         pages[InGamePage.PageType.ManaPage] = GetComponent<ManaPage>();
         pages[InGamePage.PageType.MainPage] = GetComponent<MainPage>();
