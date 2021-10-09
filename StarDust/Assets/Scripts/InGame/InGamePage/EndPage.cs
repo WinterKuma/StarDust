@@ -15,6 +15,7 @@ public class EndPage : InGamePage
         //{
         //    
         //}
+        StartCoroutine(Delay());
     }
 
     public override void Exit()
@@ -33,6 +34,10 @@ public class EndPage : InGamePage
     {
         //서버 구현 시 stay 페이지 상대방은 마나 페이지로 들어감
         //효과 후 변경
+    }
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1.0f);
         manager.SetPage(PageType.ManaPage);
     }
 }
