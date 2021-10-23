@@ -1,13 +1,15 @@
+using UnityEngine;
+
 public class CardInfo
 {
-    enum CardType
+    public enum CardType
     {
         Normal,
         Counter,
         Ultimate
     }
 
-    enum CardRarity
+    public enum CardRarity
     {
         Normal,
         Rare,
@@ -16,4 +18,9 @@ public class CardInfo
 
     CardType type = CardType.Normal;
     CardRarity rarity = CardRarity.Normal;
+    int cost;
+    int coolTime;
+    string name;
+    string effectString;
+    Sprite Image;
 }
