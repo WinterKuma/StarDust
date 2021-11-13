@@ -16,4 +16,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f0ddb83107e9597469aeaeb84bb74f3d, type: 2}
   - {fileID: 11400000, guid: 19dcde94dccfa1d40a935c2ce4f2f1a1, type: 2}
   - {fileID: 11400000, guid: fe5a83052c523eb4e8c587045fb2b41b, type: 2}
+  - {fileID: 11400000, guid: 7c1f7e0ba05992145b45a7827e96db48, type: 2}
+  - {fileID: 11400000, guid: ee3e7356860788e409dd98c1b47bdfb3, type: 2}
   tileCode: 1
